@@ -41,45 +41,13 @@ This node is useful for **obstacle detection**, **navigation**, and **safety mon
 
 ---
 
-## **Installation & Usage**  
 
-### **1. Dependencies Installation**  
-Ensure you have the required ROS 2 packages installed:  
-```sh
-sudo apt update
-sudo apt install ros-humble-rclcpp ros-humble-sensor-msgs ros-humble-std-msgs
-```
-*(Replace `humble` with your ROS 2 distribution name if different.)*
-
-### **2. Adding the Node to a ROS 2 Package**  
-Navigate to your package source directory:  
-```sh
-cd ~/ros2_ws/src/my_package
-```
-Create a new C++ source file `distance_publisher.cpp` inside the `src/` directory and copy the provided code.
-
-### **3. Updating CMakeLists.txt**  
 Modify the `CMakeLists.txt` in your package to include this new node:  
 ```cmake
 add_executable(distance_publisher src/distance_publisher.cpp)
 ament_target_dependencies(distance_publisher rclcpp sensor_msgs std_msgs)
 install(TARGETS distance_publisher DESTINATION lib/${PROJECT_NAME})
 ```
-
-### **4. Building the Package**  
-Return to your ROS 2 workspace and build the package:  
-```sh
-cd ~/ros2_ws
-colcon build --packages-select my_package
-```
-
-### **5. Running the Node**  
-Source the workspace and run the node:  
-```sh
-source ~/mazerover_auto/install/setup.bash
-ros2 run haruto_description talker
-```
-
 ---
 
 ## **Code Explanation of min.cpp in script directory**  
