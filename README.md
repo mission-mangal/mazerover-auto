@@ -44,9 +44,9 @@ This node is useful for **obstacle detection**, **navigation**, and **safety mon
 
 Modify the `CMakeLists.txt` in your package to include this new node:  
 ```cmake
-add_executable(distance_publisher src/distance_publisher.cpp)
-ament_target_dependencies(distance_publisher rclcpp sensor_msgs std_msgs)
-install(TARGETS distance_publisher DESTINATION lib/${PROJECT_NAME})
+add_executable(talker src/publisher_member_function.cpp)
+ament_target_dependencies(talker rclcpp std_msgs sensor_msgs)
+install(TARGETS talker DESTINATION lib/${PROJECT_NAME})
 ```
 ---
 
