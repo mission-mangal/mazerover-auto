@@ -1,12 +1,7 @@
 ## **Clone the `mazerover-auto` workspace from GitHub:**
-
- 
-    ```bash
-    cd ~/mazerover-auto
-    ```
-    
-* * *
-
+   ```bash
+   git clone https://github.com/mission-mangal/mazerover-auto
+   ```
 ## **Build and Run the Package**
 
 1.  Navigate to the workspace:
