@@ -49,6 +49,10 @@ ament_target_dependencies(talker rclcpp std_msgs sensor_msgs)
 install(TARGETS talker DESTINATION lib/${PROJECT_NAME})
 ```
 ---
+## To run min.cpp node run this command on your terminal after sourcing the workspace:
+```bash
+ros2 run haruto_description talker
+```
 
 ## **Code Explanation of min.cpp in script directory**  
 
